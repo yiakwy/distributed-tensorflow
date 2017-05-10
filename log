@@ -1,0 +1,4 @@
+nohup: ignoring input
+2017-05-10 02:40:00.824205: I tensorflow/core/distributed_runtime/rpc/grpc_channel.cc:200] Initialize GrpcChannelCache for job local -> {0 -> localhost:22, 1 -> localhost:33}
+2017-05-10 02:40:00.826466: I tensorflow/core/distributed_runtime/rpc/grpc_server_lib.cc:240] Started server with target: grpc://localhost:33
+2017-05-10 02:40:00.826528: I tensorflow/core/distributed_runtime/rpc/grpc_server_lib.cc:244] Server already started (target: grpc://localhost:33)

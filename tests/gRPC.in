@@ -1,0 +1,164 @@
+waiting ...waiting ...
+
+ executing jobs...
+job 0
+add a task
+job 1
+add a task
+job 2
+add a task
+processing ... taks
+op
+ip
+task 0 visiting grpc//localhost:4000
+job 3processing ... taks
+op
+ip
+task 1 visiting grpc//localhost:4001
+
+add a task
+job 4
+add a task
+Hello, distributed Tensorflow! I am Node 0
+done
+waiting ...
+processing ... taks
+op
+ip
+task 2 visiting grpc//localhost:4000
+job 5
+add a taskHello, distributed Tensorflow! I am Node 1
+
+done
+waiting ...
+processing ... taks
+op
+ip
+task 3 visiting grpc//localhost:4001
+job 6
+add a task
+Hello, distributed Tensorflow! I am Node 2
+done
+waiting ...
+processing ... taks
+op
+ip
+task 4 visiting grpc//localhost:4000
+job 7
+add a task
+Hello, distributed Tensorflow! I am Node 4
+Hello, distributed Tensorflow! I am Node 3
+done
+waiting ...
+processing ... taks
+op
+ip
+task 5 visiting grpc//localhost:4001
+job 8
+add a task
+done
+waiting ...
+processing ... taks
+opjob 9
+add a task
+
+ip
+task 6 visiting grpc//localhost:4000
+Hello, distributed Tensorflow! I am Node 5
+done
+waiting ...
+processing ... taks
+op
+ip
+task 7 visiting grpc//localhost:4001
+job 10
+add a task
+Hello, distributed Tensorflow! I am Node 6
+done
+waiting ...
+processing ... taks
+op
+ip
+task 8 visiting grpc//localhost:4000
+job 11
+add a task
+Hello, distributed Tensorflow! I am Node 8
+Hello, distributed Tensorflow! I am Node 7
+done
+waiting ...
+processing ... taks
+op
+done
+waiting ...
+processing ... taks
+op
+ip
+task 10 visiting grpc//localhost:4001
+job 12
+add a task
+job 13
+add a task
+ip
+task 9 visiting grpc//localhost:4000
+Hello, distributed Tensorflow! I am Node 9
+Hello, distributed Tensorflow! I am Node 10
+done
+waiting ...
+processing ... taks
+op
+ip
+task 11 visiting grpc//localhost:4001
+job 14
+add a task
+done
+waiting ...
+processing ... taks
+op
+ip
+task 12 visiting grpc//localhost:4000
+job 15
+add a task
+Hello, distributed Tensorflow! I am Node 11
+Hello, distributed Tensorflow! I am Node 12
+done
+waiting ...
+processing ... taks
+op
+ip
+task 13 visiting grpc//localhost:4001
+job 16
+add a task
+done
+waiting ...
+processing ... taks
+op
+ip
+task 14 visiting grpc//localhost:4000
+job 17
+add a task
+Hello, distributed Tensorflow! I am Node 14
+Hello, distributed Tensorflow! I am Node 13
+done
+waiting ...
+processing ... taks
+op
+ip
+task 15 visiting grpc//localhost:4001
+job 18
+add a task
+done
+waiting ...
+processing ... taks
+op
+ip
+task 16 visiting grpc//localhost:4000
+job 19
+add a task
+Hello, distributed Tensorflow! I am Node 16
+Hello, distributed Tensorflow! I am Node 15
+done
+waiting ...
+processing ... taks
+op
+ip
+task 17 visiting grpc//localhost:4001
