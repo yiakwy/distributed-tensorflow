@@ -42,9 +42,12 @@ sudo yum makecache fast
 sudo yum install docker-\* -y
 sudo systemctl start docker && docker run hello-world
 ```
+or run equivalently 
+
+> sh Docker.install
 
 ### beside the default version of Docker
-It will typically take one half an hour to install the software. The link is continuously updated by relevant companies. So if you want to install specific version of Docker, you might need to consult Docker repositories in **yum**.
+It will typically take one half an hour to install the software. The link is continuously updated by relevant companies. So if you want to install specific version of Docker, you might need to consult Docker repositories in [**yum**](https://docs.docker.com/engine/installation/linux/centos/#install-docker).
 
 ## BUG SHOOTING
 ### Amazon EC2 Connection Refusion
@@ -70,5 +73,9 @@ sudo sh nvdocker.install
 ```
 
 ### "Tensorflow-Serving"
-
+```
+cd ~/Github/distributed-tensorflow/
+# $USER is your DockerHub username !
+docker build --pull -t yiakwy/tensorflow-serving-devel -f Dockerfile.devel .
+```
 
