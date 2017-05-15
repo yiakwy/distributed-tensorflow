@@ -86,6 +86,17 @@ sudo sh nvdocker.install
 
 Optionally you can use dockerfile provided by google, but with dependencies on Ubuntu, CentOS will use significant time to build it.
 
+#### For people in China
+You cannot download bazel without "Amazon signature client referred by github". Since bazel is very large \(
+cannot uploaded to githu \), the plausible way to download bazel is
+
+> download: bazel-0.4.5-installer-linux-x86_64.sh
+
+then
+
+> sudo scp -i ~/.ssh/PrivateKey -P RouterPort  ~/GitHub/distributed-tensorflow/bazel-0.4.5-installer-linux-x86_64.sh root@RouterHost:~/Github/distributed-tensorflow/   
+
+#### build
 ```
 cd ~/Github/distributed-tensorflow/
 # $USER is your DockerHub username !
