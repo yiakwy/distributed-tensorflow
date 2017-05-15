@@ -23,9 +23,9 @@ In the default OS configuration, you have yum \(executed by system python\), pyt
 Second step, execute shell codes:
 ```
 sudo yum makecache fast
-yum install -y \\
-    yum-utils \\
-    git \\
+yum install -y \
+    yum-utils \
+    git \
     vim
 
 mkdir Github && cd Github
@@ -53,11 +53,15 @@ The current solution is downloading the file directly and scp to remote servers.
 ### To Support GPU processing
 Before you install nvdocker, you must uninstall all the old versions of docker
 
-> sudo yum remove docker \\
-                  docker-common \\
-                  container-selinux \\
-                  docker-selinux \\
-                  docker-engine
+``` shell
+sudo yum remove docker \
+                docker-common \
+                container-selinux \
+                docker-selinux \
+                docker-engine
+```
+
+Then 
 
 ``` shell
 sudo sh nvdocker.install
