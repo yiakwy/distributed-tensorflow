@@ -39,7 +39,7 @@ curl -# -O https://download.docker.com/linux/centos/7/x86_64/stable/Packages/doc
 sudo yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
 sudo yum-config-manager --enable docker-ce-edge
 sudo yum makecache fast
-sudo yum install docker-\* -y
+sudo yum install docker-ce-\* -y
 sudo systemctl start docker && docker run hello-world
 ```
 or run equivalently 
