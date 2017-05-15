@@ -34,12 +34,14 @@ cd ~
 ```
 Third step, Install Docker and execute it
 
-> curl -# -O https://download.docker.com/linux/centos/7/x86\_64/stable/Packages/docker-ce-17.03.1.ce-1.el7.centos.x86\_64.rpm
-> sudo yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
-> sudo yum-config-manager --enable docker-ce-edge
-> sudo yum makecache fast
-> sudo yum install docker-\* -y
-> sudo systemctl start docker && docker run hello-world
+```shell
+curl -# -O https://download.docker.com/linux/centos/7/x86_64/stable/Packages/docker-ce-17.03.1.ce-1.el7.centos.x86_64.rpm
+sudo yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
+sudo yum-config-manager --enable docker-ce-edge
+sudo yum makecache fast
+sudo yum install docker-\* -y
+sudo systemctl start docker && docker run hello-world
+```
 
 ### beside the default version of Docker
 It will typically take one half an hour to install the software. The link is continuously updated by relevant companies. So if you want to install specific version of Docker, you might need to consult Docker repositories in **yum**.
