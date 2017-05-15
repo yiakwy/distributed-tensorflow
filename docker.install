@@ -1,0 +1,5 @@
+# install git
+yum install -y \
+    git \
+    vim
+
