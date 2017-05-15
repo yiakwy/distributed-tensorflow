@@ -22,7 +22,6 @@ In the default OS configuration, you have yum \(executed by system python\), pyt
 
 Second step, execute shell codes:
 ```
-sudo yum makecache fast
 yum install -y \
     yum-utils \
     git \
@@ -41,17 +40,28 @@ sudo yum-config-manager --enable docker-ce-edge
 sudo yum makecache fast
 sudo yum install docker-ce-\* -y
 sudo systemctl start docker && docker run hello-world
+# make sure docker run as non-root user
+sudo groupadd docker
+sudo usermod -aG docker $USER
 ```
 or run equivalently 
 
-> sh Docker.install
+> sh ~/Github/distributed-tensorflow/docker.install
 
 ### beside the default version of Docker
 It will typically take one half an hour to install the software. The link is continuously updated by relevant companies. So if you want to install specific version of Docker, you might need to consult Docker repositories in [**yum**](https://docs.docker.com/engine/installation/linux/centos/#install-docker).
 
+## Distributed Tensorflow with grpc
+You can either pull image from [Yiak](https://hub.docker.com/r/yiakwy/tensorflow-distributed/) or run following commands to build by yourself. But I recommend to build it by yourself, becuase you might have several things to configure locally
+
+### configuration
+
+### run server inside a container
+
+
 ## BUG SHOOTING
 ### Amazon EC2 Connection Refusion
-Since authentication required by Amazon EC2 Cloud, requrests referred by Github\(Github-Cloud hosted in Amazon EC2 platform\) will be refused due to lack of signature.
+Since authentication required by Amazon EC2 Cloud, requrests being referred by Github\(Github-Cloud hosted in Amazon EC2 platform\) will be refused due to lack of signature.
 
 The current solution is downloading the file directly and scp to remote servers. "get-pip" has already been included in the repository but if you encounter more such errors, please download scripts by yourself.
 
@@ -73,9 +83,26 @@ sudo sh nvdocker.install
 ```
 
 ### "Tensorflow-Serving"
+
+Optionally you can use dockerfile provided by google, but with dependencies on Ubuntu, CentOS will use significant time to build it.
+
 ```
 cd ~/Github/distributed-tensorflow/
 # $USER is your DockerHub username !
 docker build --pull -t yiakwy/tensorflow-serving-devel -f Dockerfile.devel .
+```
+Google tensorfow-serving use babel to build and export models, which cosumes nearly 10 GB memories in runtime.
+
+run the following commands to run container
+
+> docker run -it ${your dockerhub usernaem}/tensorflow-serving-devel
+
+then run 
+``` shell
+git clone --recurse-submodules https://github.com/tensorflow/serving
+cd serving/tensorflow
+./configure
+cd ..
+bazel test tensorflow_serving/...
 ```
 
