@@ -54,10 +54,16 @@ It will typically take one half an hour to install the software. The link is con
 ## Distributed Tensorflow with grpc
 You can either pull image from [Yiak](https://hub.docker.com/r/yiakwy/tensorflow-distributed/) or run following commands to build by yourself. But I recommend to build it by yourself, becuase you might have several things to configure locally
 
-### configuration
+### Run server inside a container for Router - Nodes framework:
+Expose ports you want and configure router accordingly. Run docker in the following manner:
 
-### run server inside a container
+> docker run -p 4000:9001 -p 4001:9002 $USER/tensorflow-distributed
 
+Then your server can be visited outside the world
+
+### Test
+cd tests you can try whatever you want!
+![test-ex](/test-ex.png)
 
 ## BUG SHOOTING
 ### Amazon EC2 Connection Refusion
