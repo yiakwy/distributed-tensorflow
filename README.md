@@ -1,6 +1,8 @@
 Distributed Tensorflow Building
 ===============================
 
+![net-topology](/net-topology.png)
+
 This project aimed at providing necessary files needed to build [distributed tensorflow](http://yiakwy.github.io/blog/2017/05/13/Tiny-Distributed-Tensorflow-&-OCI-Series2) for CentOS users.
 
 The content includes:
